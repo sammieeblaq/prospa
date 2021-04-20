@@ -1,14 +1,11 @@
-import Sidebar from "./components/Sidebar";
-import LoginPage from "./pages/LoginPage";
-import SignUpPage from "./pages/SignUpPage";
+import React from "react";
+import Layout from "./pages/Layout";
 
-function App() {
+const App = () => {
   return (
-    <div className="landing__container">
-        <Sidebar />
-        <SignUpPage />
-        {/* <LoginPage /> */}
-    </div>
+    <>
+      <Layout />
+    </>
   );
 }
 
