@@ -56,10 +56,13 @@ export default function FormTwo() {
       </div>
       <div className="form-check mt-3 mb-3 px-5 py-4 rnd shadow__form d-flex align-items-center">
         <div className="custom-control custom-radio">
-          <input className="custom-control-input opac" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-          I'm a freelancer I do business in , <br />
+          <input type="radio" id="customRadio3" name="customRadio" className="d-none custom-control-input" />
+          <label className="custom-control-label" htmlFor="customRadio3">
+            I'm a freelancer I do business in , <br />
             my personal name.
-         </div>
+                </label>
+        </div>
+
       </div>
     </div >
   )
