@@ -14,9 +14,9 @@ export default function Navbar() {
         <h4>Dashboard</h4>
       </div>
       <div className="icons mr-5">
-        <img src={bell} alt="bell" className="img-fluid mr-4" width="40px" />
-        <img src={profile} alt="Profile" className="img-fluid" width="50px" />
-        <img src={logout} className="img-fluid ml-2" style={{ cursor: "pointer" }} onClick={() => history.push("/")} alt="Signout" width="38px" />
+        <img src={bell} alt="bell" className="img-fluid mr-4" width="30px" />
+        <img src={profile} alt="Profile" className="img-fluid" width="30px" />
+        <img src={logout} className="img-fluid ml-2" style={{ cursor: "pointer" }} onClick={() => history.push("/")} alt="Signout" width="30px" />
       </div>
     </div>
   )
