@@ -1,8 +1,9 @@
 import React from 'react'
-import { Link } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"
 import back from "../assets/images/back.svg"
 
 const LoginPage = () => {
+  const history = useHistory();
   return (
     <div className="w-100">
       <div className="onboard__content">
@@ -28,9 +29,9 @@ const LoginPage = () => {
               </div>
 
               <div>
-                <button className="btn form-control p-2 mt-3 btn__color">
+                <button className="btn form-control p-2 mt-3 btn__color" onClick={() => history.push("/home")}>
                   Sign In
-                            </button>
+                </button>
               </div>
             </div>
           </div>

@@ -12,8 +12,6 @@ import bell from "../assets/images/bell.png"
 // import { useHistory } from 'react-router'
 
 export default function Home() {
-  // const history = useHistory();
-  // console.log(history.location.pathname)
   return (
     <div className="w-100">
       <div className="dashboard">

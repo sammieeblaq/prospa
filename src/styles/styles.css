@@ -8,7 +8,7 @@
 /* Sidebar */
 .sidebar {
     background-color: rgb(102, 16, 242);
-    width: 340px;
+    width: 300px;
     flex: 0 0 360px;
     max-width: 360px;
     height: 100vh;
@@ -242,6 +242,9 @@
 
 @media only screen and (max-width: 640px) {
     .sidebar {
+        display: none;
+    }
+    .sidebar__2 {
         display: none;
     }
 
