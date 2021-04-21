@@ -14,7 +14,7 @@ export default function HomeSidebar() {
         <div className="d-flex">
           <img src={company} className="img-fluid sidebar__img mr-2" alt="Clayant Inc" />
           <div className="text-dark">
-            <h6 className="font-weight-bold large">Clayant Inc</h6>
+            <h6 className="font-weight-bold large" style={{ marginBottom: "-3px" }}>Clayant Inc</h6>
             <span className="light__color">Manage Account</span>
           </div>
         </div>
