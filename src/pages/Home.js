@@ -1,7 +1,7 @@
 import React from 'react'
 import rectangle from "../assets/images/Rectangle.png"
 import rectangle2 from "../assets/images/Rectangle2.png"
-import profile from "../assets/images/profile.svg"
+import profile from "../assets/images/profile.png"
 import chart from "../assets/images/chart.png"
 import bank from "../assets/images/bank.png"
 import internet from "../assets/images/internet.png"
@@ -9,7 +9,6 @@ import marketing from "../assets/images/marketing.png"
 import transfer from "../assets/images/transfer.png"
 import oval from "../assets/images/Oval.png"
 import bell from "../assets/images/bell.png"
-// import { useHistory } from 'react-router'
 
 export default function Home() {
   return (
