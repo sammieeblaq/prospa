@@ -1,32 +1,21 @@
 import React from 'react'
-import { useHistory } from 'react-router'
+
 import rectangle from "../assets/images/Rectangle.png"
 import rectangle2 from "../assets/images/Rectangle2.png"
-import profile from "../assets/images/profile.png"
 import chart from "../assets/images/chart.png"
 import bank from "../assets/images/bank.png"
 import internet from "../assets/images/internet.png"
 import marketing from "../assets/images/marketing.png"
 import transfer from "../assets/images/transfer.png"
 import oval from "../assets/images/Oval.png"
-import bell from "../assets/images/bell.png"
-import logout from "../assets/images/logout.png"
+import Navbar from '../components/Navbar'
+
 
 export default function Home() {
-  const history = useHistory();
   return (
     <div className="w-100">
       <div className="dashboard">
-        <div className="d-flex justify-content-between align-items-center navbar">
-          <div className="d__color">
-            <h4>Dashboard</h4>
-          </div>
-          <div className="icons mr-5">
-            <img src={bell} alt="bell" className="img-fluid mr-4" width="40px" />
-            <img src={profile} alt="Profile" className="img-fluid" width="50px" />
-            <img src={logout} className="img-fluid ml-2" style={{ cursor: "pointer" }} onClick={() => history.push("/")} alt="Signout" width="38px" />
-          </div>
-        </div>
+        <Navbar />
         <div className="onboard__content">
           <div className="container">
             <div className="row justify-content-between align-items-center">
