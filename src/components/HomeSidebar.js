@@ -35,7 +35,7 @@ export default function HomeSidebar() {
         }
       </div>
       <div className="mt-5">
-        <div className="d-flex justify-content-start align-items-center p-2 nav__list">
+        <div className="d-flex justify-content-start align-items-center py-3 p-2 nav__list">
           <div className="mr-3">
             <img src={side} alt="Side Icon" />
           </div>
@@ -43,7 +43,7 @@ export default function HomeSidebar() {
             <h6>Management</h6>
           </div>
         </div>
-        <div className="d-flex justify-content-start align-items-center p-2 nav__list">
+        <div className="d-flex justify-content-start align-items-center py-3 p-2 nav__list">
           <div className="mr-3">
             <img src={side2} alt="Side Icon" />
           </div>
@@ -51,7 +51,7 @@ export default function HomeSidebar() {
             <h6>Store</h6>
           </div>
         </div>
-        <div className="d-flex justify-content-start align-items-center p-2 nav__list">
+        <div className="d-flex justify-content-start align-items-center py-3 p-2 nav__list">
           <div className="mr-3">
             <img src={side} alt="Side Icon" />
           </div>
@@ -59,7 +59,7 @@ export default function HomeSidebar() {
             <h6>Security</h6>
           </div>
         </div>
-        <div className="d-flex justify-content-start align-items-center p-2 nav__list">
+        <div className="d-flex justify-content-start align-items-center py-3 p-2 nav__list">
           <div className="mr-3">
             <img src={side2} alt="Side Icon" />
           </div>
@@ -67,7 +67,7 @@ export default function HomeSidebar() {
             <h6>Support</h6>
           </div>
         </div>
-        <div className="d-flex justify-content-start align-items-center p-2 nav__list">
+        <div className="d-flex justify-content-start align-items-center py-3 p-2 nav__list">
           <div className="mr-3">
             <img src={side} alt="Side Icon" />
           </div>
@@ -75,7 +75,7 @@ export default function HomeSidebar() {
             <h6>Cards</h6>
           </div>
         </div>
-        <div className="d-flex justify-content-start align-items-center p-2 nav__list">
+        <div className="d-flex justify-content-start align-items-center py-3 p-2 nav__list">
           <div className="mr-3">
             <img src={side2} alt="Side Icon" />
           </div>

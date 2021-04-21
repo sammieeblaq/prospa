@@ -6,7 +6,7 @@ export default function FormOne() {
       <div className="form__title">Create Account</div>
       <div className="form__description mb-3">Use your own personal information</div>
       <div className="onboarding__form">
-        <div className="form-group mb-4">
+        <div className="form-group mb-4 text__underline">
           <input className="form-control input__rem" placeholder="First Name" type="text" />
         </div>
         <div className="form-group mb-4">

@@ -1,53 +1,66 @@
 import React from 'react'
+import { Accordion, Card } from "react-bootstrap"
+
+import check from "../../assets/images/check.png"
 
 export default function FormTwo() {
   return (
     <div>
       <div className="form__title">Open a new business account</div>
       <div className="form__description mb-2">A short description comes here</div>
-      <div className="form-check px-5 py-4 mb-2 rnd shadow__form rnd__color">
-        <div className="d-flex align-items-center">
-          <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-          <label className="form-check-label" htmlFor="flexRadioDefault2">
-            I have a registered business / <b />
-                    charity with CAC
+      <div>
+        <Accordion defaultActiveKey="1">
+          <Card className="px-4 py-3 rnd border-0 shadow__form">
+            <Accordion.Toggle className="bg-white no__bottom" as={Card.Header} eventKey="0">
+              <div className="custom-control custom-radio">
+                <input type="radio" id="customRadio1" name="customRadio" className="d-none custom-control-input" />
+                <label className="custom-control-label" htmlFor="customRadio1">
+                  have a registered business / <b />
+                    charity with CAC <br />
                 </label>
-        </div>
-        <div>
-          <div className="form-check d-flex align-items-center">
-            <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-            <label className="form-check-label" htmlFor="flexRadioDefault2">
-              Account in your business name
-                        </label>
-          </div>
-          <div className="form-check d-flex align-items-center">
-            <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-            <label className="form-check-label" htmlFor="flexRadioDefault2">
-              Send to and receive transfers from all Nigerian banks
-                        </label>
-          </div>
-          <div className="form-check d-flex align-items-center">
-            <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-            <label className="form-check-label" htmlFor="flexRadioDefault2">
-              Tools for business management
-                        </label>
-          </div>
-        </div>
+              </div>
+            </Accordion.Toggle>
+            <Accordion.Collapse eventKey="0">
+              <Card.Body className="minus__top pl-4">
+                <span className="d__color">As a registered business, you'll get: </span><br />
+                <span><img src={check} alt="Check" className="img-fluid" /> Account in your business name</span><br />
+                <span><img src={check} alt="Check" className="img-fluid" /> Send to and receive transfers from all<br /> Nigerian banks</span><br />
+                <span><img src={check} alt="Check" className="img-fluid" /> Tools for business management</span>
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+        </Accordion>
       </div>
-      <div className="form-check px-5 py-4 mb-3 rnd shadow__form d-flex align-items-center">
-        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-        <label className="form-check-label" htmlFor="flexRadioDefault2">
-          My business is not yet registered, <br />
-                    I would like to register.
+      <div className="mt-3">
+        <Accordion defaultActiveKey="1">
+          <Card className="px-4 py-3 border-0 rnd shadow__form">
+            <Accordion.Toggle className="bg-white no__bottom" as={Card.Header} eventKey="0">
+              <div className="custom-control custom-radio">
+                <input type="radio" id="customRadio2" name="customRadio" className="d-none custom-control-input" />
+                <label className="custom-control-label" htmlFor="customRadio2">
+                  My business is not yet registered,  <br />
+                    I would like to register <br />
                 </label>
+              </div>
+            </Accordion.Toggle>
+            <Accordion.Collapse eventKey="0">
+              <Card.Body className="minus__top pl-4">
+                <span className="d__color">Everything you need to start your business: </span><br />
+                <span><img src={check} alt="Check" className="img-fluid" /> Register business name with CAC</span><br />
+                <span><img src={check} alt="Check" className="img-fluid" /> Tax Identification Number</span><br />
+                <span><img src={check} alt="Check" className="img-fluid" /> Your account will be automatically opened on completion</span>
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+        </Accordion>
       </div>
-      <div className="form-check px-5 py-4 rnd shadow__form d-flex align-items-center">
-        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-        <label className="form-check-label" htmlFor="flexRadioDefault2">
+      <div className="form-check mt-3 mb-3 px-5 py-4 rnd shadow__form d-flex align-items-center">
+        <div className="custom-control custom-radio">
+          <input className="custom-control-input opac" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
           I'm a freelancer I do business in , <br />
-                    my personal name.
-                </label>
+            my personal name.
+         </div>
       </div>
-    </div>
+    </div >
   )
 }

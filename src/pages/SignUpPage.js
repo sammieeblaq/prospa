@@ -3,7 +3,7 @@ import { Link, useHistory } from "react-router-dom"
 import back from "../assets/images/back.svg"
 
 import FormOne from "../components/Form/FormOne";
-import FormThree from '../components/Form/FormThree';
+// import FormThree from '../components/Form/FormThree';
 import FormTwo from '../components/Form/FormTwo';
 
 const SignUpPage = () => {
@@ -39,10 +39,10 @@ const SignUpPage = () => {
         </div>
         <div className="row justify-content-center">
           <div className="col-lg-5 col-md-5 col-sm-12 onboard__form__container">
-            {next === 0 ? <FormOne /> : next === 1 ? <FormTwo /> : <FormThree />}
+            {next === 0 ? <FormOne /> : <FormTwo />}
             <div>
               {
-                next !== 2
+                next !== 1
                   ? <button className="form-control p-2 btn__color mt-2" onClick={() => setNext(next + 1)}>
                     Next
                     </button>
