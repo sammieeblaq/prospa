@@ -9,8 +9,11 @@ import marketing from "../assets/images/marketing.png"
 import transfer from "../assets/images/transfer.png"
 import oval from "../assets/images/Oval.png"
 import bell from "../assets/images/bell.png"
+// import { useHistory } from 'react-router'
 
 export default function Home() {
+  // const history = useHistory();
+  // console.log(history.location.pathname)
   return (
     <div className="w-100">
       <div className="dashboard">
@@ -27,8 +30,8 @@ export default function Home() {
           <div className="container">
             <div className="row justify-content-between align-items-center">
               <div>
-                <h3>Welcome back, Samuel</h3>
-                <p>Here's what has been happening in the last <span style={{ color: "#fa4a84" }}>7 days</span></p>
+                <h3 className="font">Welcome back, Samuel</h3>
+                <p>Here's what has been happening in the last <span className="light__color">7 days</span></p>
               </div>
               <div>
                 <button className="btn sub__account__btn mr-5">Add a sub account</button>
@@ -71,7 +74,7 @@ export default function Home() {
 
           </div>
           <div className="row mt-4">
-            <div className="col-md-6">
+            <div className="col-md-6 bottom">
               <div className="bg-white rounded card__width">
                 <div className="p-4">
                   <div className="pl-2">
@@ -112,7 +115,7 @@ export default function Home() {
                       <span>Bank Fees</span>
                     </div>
                     <p className="justify-content-end pb-3 mr__right">-N250000</p>
-                    <div className="progress w-50 progress__bar">
+                    <div className="progress prog__width progress__bar">
                       <div className="progress-bar prog__color" role="progressbar" style={{ width: "80%" }} aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
@@ -122,7 +125,7 @@ export default function Home() {
                       <span>Internet</span>
                     </div>
                     <p className="justify-content-end pb-3 mr__right">-N250000</p>
-                    <div className="progress w-50 progress__bar">
+                    <div className="progress prog__width progress__bar">
                       <div className="progress-bar prog__color" role="progressbar" style={{ width: "60%" }} aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
@@ -132,7 +135,7 @@ export default function Home() {
                       <span>Marketing</span>
                     </div>
                     <p className="justify-content-end pb-3 mr__right">-N250000</p>
-                    <div className="progress w-50 progress__bar">
+                    <div className="progress prog__width progress__bar">
                       <div className="progress-bar prog__color" role="progressbar" style={{ width: "30%" }} aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
@@ -142,7 +145,7 @@ export default function Home() {
                       <span>Transfer</span>
                     </div>
                     <p className="justify-content-end pb-2 mr__right">-N250000</p>
-                    <div className="progress w-50 progress__bar">
+                    <div className="progress prog__width progress__bar">
                       <div className="progress-bar prog__color" role="progressbar" style={{ width: "10%" }} aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
@@ -155,7 +158,7 @@ export default function Home() {
               <div className="bg-white rounded card__full p-3">
                 <div className="d-flex justify-content-between align-items-center">
                   <div>
-                    <h5>Recent transactions</h5>
+                    <h5 className="font_2">Recent transactions</h5>
                   </div>
                   <div>
                     <div>

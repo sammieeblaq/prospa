@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"
 import back from "../assets/images/back.svg"
 
 import FormOne from "../components/Form/FormOne";
@@ -8,6 +8,8 @@ import FormTwo from '../components/Form/FormTwo';
 
 const SignUpPage = () => {
   const [next, setNext] = useState(0)
+  const history = useHistory();
+
 
   return (
     <div className="w-100">
@@ -36,12 +38,19 @@ const SignUpPage = () => {
           </div>
         </div>
         <div className="row justify-content-center">
-          <div className="col-md-5 onboard__form__container">
+          <div className="col-lg-5 col-md-5 col-sm-12 onboard__form__container">
             {next === 0 ? <FormOne /> : next === 1 ? <FormTwo /> : <FormThree />}
             <div>
-              <button className="btn form-control p-2 btn__color mt-2" onClick={() => setNext(next + 1)}>
-                Next
+              {
+                next !== 2
+                  ? <button className="form-control p-2 btn__color mt-2" onClick={() => setNext(next + 1)}>
+                    Next
                     </button>
+                  :
+                  <button className="btn form-control p-2 btn__color mt-2" onClick={() => history.push("/home")}>
+                    Submit
+                  </button>
+              }
             </div>
           </div>
         </div>

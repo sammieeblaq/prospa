@@ -3,12 +3,11 @@ import React from 'react'
 export default function FormThree() {
   return (
     <div>
-      <div class="form__title">Open a new business account</div>
-      <div class="form__description mb-2">A short description comes here</div>
+      <div className="form__title">Open a new business account</div>
+      <div className="form__description mb-2">A short description comes here</div>
       <div className="form-check px-5 py-4 mb-3 rnd shadow__form d-flex align-items-center">
         <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
         <label className="form-check-label" for="flexRadioDefault2">
-
           I have a registered business / <b />
                     charity with CAC
                 </label>
