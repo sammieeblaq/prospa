@@ -6,8 +6,8 @@ import logout from "../assets/images/logout.png"
 import profile from "../assets/images/profile.png"
 
 
-export default function Navbar() {
-  const history = useHistory
+const Navbar = () => {
+  const history = useHistory();
   return (
     <div className="d-flex justify-content-between align-items-center navbar">
       <div className="d__color">
@@ -21,3 +21,5 @@ export default function Navbar() {
     </div>
   )
 }
+
+export default Navbar;
