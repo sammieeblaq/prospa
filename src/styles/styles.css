@@ -225,6 +225,11 @@
     color: #8397ab;
 }
 
+.day__color {
+    color: #fa4a84;
+    text-decoration: underline #fa4a84;
+}
+
 .over {
     position: absolute;
     z-index: 9;
@@ -262,5 +267,29 @@
     }
     .prog__width {
         width: 33% !important;
+    }
+    .account__card {
+        margin-bottom: 15px;
+    }
+    .sidebar__2 {
+        width: 240px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .bottom {
+        margin-bottom: 15px;
+    }
+    .account__card {
+        margin-bottom: 15px;
+    }
+    .mr__right {
+        margin-right:  -80px;;
+    }
+    .prog__width {
+        width: 25% !important;
+    }
+    .sidebar__2 {
+        width: 240px;
     }
   }

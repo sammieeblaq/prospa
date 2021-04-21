@@ -29,7 +29,7 @@ export default function Home() {
             <div className="row justify-content-between align-items-center">
               <div>
                 <h3 className="font">Welcome back, Samuel</h3>
-                <p>Here's what has been happening in the last <span className="light__color">7 days</span></p>
+                <p>Here's what has been happening in the last <span className="day__color">7 days</span></p>
               </div>
               <div>
                 <button className="btn sub__account__btn mr-5">Add a sub account</button>
@@ -38,7 +38,7 @@ export default function Home() {
           </div>
           <div className="row mt-5">
             <div className="col-md-6">
-              <div className="bg-white rounded card__width">
+              <div className="bg-white rounded card__width account__card">
                 <div className="p-3 d-flex justify-content-between">
                   <div>
                     <h6>CURRENT ACCOUNT</h6>

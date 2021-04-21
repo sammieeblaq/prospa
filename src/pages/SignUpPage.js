@@ -47,7 +47,7 @@ const SignUpPage = () => {
                     Next
                     </button>
                   :
-                  <button className="btn form-control p-2 btn__color mt-2" onClick={() => history.push("/home")}>
+                  <button className="btn form-control p-2 btn__color mt-2 mb-4" onClick={() => history.push("/home")}>
                     Submit
                   </button>
               }

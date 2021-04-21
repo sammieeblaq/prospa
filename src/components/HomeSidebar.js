@@ -4,6 +4,7 @@ import company from "../assets/images/company_logo.png"
 import dropdown from "../assets/images/dropdown.png"
 import footer from "../assets/images/light_prospa.png"
 import side from "../assets/images/side_icon.png"
+import side2 from "../assets/images/side_icon2.png"
 
 export default function HomeSidebar() {
   const [open, setOpen] = useState(false)
@@ -44,7 +45,7 @@ export default function HomeSidebar() {
         </div>
         <div className="d-flex justify-content-start align-items-center p-2 nav__list">
           <div className="mr-3">
-            <img src={side} alt="Side Icon" />
+            <img src={side2} alt="Side Icon" />
           </div>
           <div className="light__color">
             <h6>Store</h6>
@@ -60,7 +61,7 @@ export default function HomeSidebar() {
         </div>
         <div className="d-flex justify-content-start align-items-center p-2 nav__list">
           <div className="mr-3">
-            <img src={side} alt="Side Icon" />
+            <img src={side2} alt="Side Icon" />
           </div>
           <div className="light__color">
             <h6>Support</h6>
@@ -76,7 +77,7 @@ export default function HomeSidebar() {
         </div>
         <div className="d-flex justify-content-start align-items-center p-2 nav__list">
           <div className="mr-3">
-            <img src={side} alt="Side Icon" />
+            <img src={side2} alt="Side Icon" />
           </div>
           <div className="light__color">
             <h6>Transfer</h6>
