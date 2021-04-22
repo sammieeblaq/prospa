@@ -24,7 +24,7 @@ export default function FormTwo() {
               <Card.Body className="minus__top pl-5">
                 <div className="d__color">As a registered business, you'll get: </div>
                 <div><img src={check} alt="Check" className="img-fluid" /> Account in your business name</div>
-                <div><img src={check} alt="Check" className="img-fluid" /> Send to and receive transfers from all <span className="pl-4">Nigerian banks</span></div>
+                <div><img src={check} alt="Check" className="img-fluid" /> Send to and receive transfers from all <span>Nigerian banks</span></div>
                 <div><img src={check} alt="Check" className="img-fluid" /> Tools for business management</div>
               </Card.Body>
             </Accordion.Collapse>
