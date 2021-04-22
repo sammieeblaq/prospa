@@ -8,7 +8,7 @@
 /* Sidebar */
 .sidebar {
     background-color: rgb(102, 16, 242);
-    width: 320px;
+    width: 350px;
     flex: 0 0 360px;
     max-width: 360px;
     height: 100vh;
@@ -77,7 +77,7 @@
 }
 
 .onboard__form__container {
-    max-width: 410px;
+    max-width: 430px;
     margin: 100px auto 0;
     height: 100%;
     flex-direction: column;
@@ -105,19 +105,44 @@
 }
 
 .input__rem {
-    border: 0!important;
     /* border-radius: 8px!important; */
     background-color: #f4f8fb!important;
     font-size: 16px;
     padding: 23px;
 }
 
-.text__underline::after {
-    content: "";
+.MuiFilledInput-root input {
+    font-size: 14px !important;
+    color: #1c1335 !important;
     border: 0 !important;
-    height: 2px;
-    border-bottom: 1px solid linear-gradient(270deg,#00d2ff -8.34%,#7e51ff 50.93%,#fa4a84 106.85%) !important;
+    width: 100% !important;
+    background: transparent !important;
 }
+
+.MuiFilledInput-root {
+    background: #f4f8fb !important;
+}
+
+.MuiFilledInput-input {
+    padding: 23px 12px 5px !important;
+}
+.MuiFormControl-root {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.MuiFilledInput-underline::before {
+    border: 0 !important;
+    height: 1px !important;
+    background: #e0e2ec !important;
+}
+
+.MuiFilledInput-underline::after {
+    border: 0;
+    height: 2px !important;
+    background: linear-gradient(270deg,#00d2ff -8.34%,#7e51ff 50.93%,#fa4a84 106.85%) !important;
+
+} 
 
 .input__rem1 {
     border: none!important;
@@ -135,6 +160,12 @@
 
 .btn__color:focus {
     background-color: #fa4a84;
+    outline: 0;
+    color: white;
+}
+
+.btn__color:hover {
+    background-color: #e87ea1;
     outline: 0;
     color: white;
 }

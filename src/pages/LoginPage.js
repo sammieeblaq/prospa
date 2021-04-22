@@ -1,4 +1,5 @@
 import React from 'react'
+import { TextField } from "@material-ui/core"
 import { Link, useHistory } from "react-router-dom"
 import back from "../assets/images/back.svg"
 
@@ -22,10 +23,10 @@ const LoginPage = () => {
             <div className="form__description mb-3">An account with powerful, personalized tools all in one place</div>
             <div className="onboarding__form">
               <div className="form-group mb-4">
-                <input className="form-control input__rem" placeholder="Email Address" type="email" />
+                <TextField variant="filled" label="Email Address" />
               </div>
               <div className="form-group mb-4">
-                <input className="form-control input__rem" placeholder="Password" type="password" />
+                <TextField variant="filled" label="Password" />
               </div>
 
               <div>

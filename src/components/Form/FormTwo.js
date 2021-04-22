@@ -21,11 +21,11 @@ export default function FormTwo() {
               </div>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
-              <Card.Body className="minus__top pl-4">
-                <span className="d__color">As a registered business, you'll get: </span><br />
-                <span><img src={check} alt="Check" className="img-fluid" /> Account in your business name</span><br />
-                <span><img src={check} alt="Check" className="img-fluid" /> Send to and receive transfers from all<br /> Nigerian banks</span><br />
-                <span><img src={check} alt="Check" className="img-fluid" /> Tools for business management</span>
+              <Card.Body className="minus__top pl-5">
+                <div className="d__color">As a registered business, you'll get: </div>
+                <div><img src={check} alt="Check" className="img-fluid" /> Account in your business name</div>
+                <div><img src={check} alt="Check" className="img-fluid" /> Send to and receive transfers from all <span className="pl-4">Nigerian banks</span></div>
+                <div><img src={check} alt="Check" className="img-fluid" /> Tools for business management</div>
               </Card.Body>
             </Accordion.Collapse>
           </Card>
@@ -44,11 +44,11 @@ export default function FormTwo() {
               </div>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
-              <Card.Body className="minus__top pl-4">
-                <span className="d__color">Everything you need to start your business: </span><br />
-                <span><img src={check} alt="Check" className="img-fluid" /> Register business name with CAC</span><br />
-                <span><img src={check} alt="Check" className="img-fluid" /> Tax Identification Number</span><br />
-                <span><img src={check} alt="Check" className="img-fluid" /> Your account will be automatically opened on completion</span>
+              <Card.Body className="minus__top pl-5">
+                <div className="d__color">Everything you need to start your business: </div>
+                <div><img src={check} alt="Check" className="img-fluid" /> Register business name with CAC</div>
+                <div><img src={check} alt="Check" className="img-fluid" /> Tax Identification Number</div>
+                <div><img src={check} alt="Check" className="img-fluid" /> Your account will be automatically <span className="pl-4">opened on completion</span></div>
               </Card.Body>
             </Accordion.Collapse>
           </Card>
@@ -60,10 +60,10 @@ export default function FormTwo() {
           <label className="custom-control-label" htmlFor="customRadio3">
             I'm a freelancer I do business in , <br />
             my personal name.
-                </label>
+          </label>
         </div>
-
       </div>
+
     </div >
   )
 }

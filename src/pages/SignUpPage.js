@@ -38,7 +38,7 @@ const SignUpPage = () => {
           </div>
         </div>
         <div className="row justify-content-center">
-          <div className="col-lg-5 col-md-5 col-sm-12 onboard__form__container">
+          <div className="col-lg-5 col-md-5 col-sm-12 p-2 onboard__form__container">
             {next === 0 ? <FormOne /> : <FormTwo />}
             <div>
               {
