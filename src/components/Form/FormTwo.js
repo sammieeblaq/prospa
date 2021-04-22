@@ -24,8 +24,8 @@ export default function FormTwo() {
               <div className="custom-control custom-radio">
                 <input type="radio" id="customRadio1" name="customRadio" className="d-none custom-control-input" />
                 <label className="custom-control-label" htmlFor="customRadio1">
-                  I have a registered business / <b />
-                    charity with CAC <br />
+                  I have a registered business / <br />
+                    charity with CAC
                 </label>
               </div>
             </Accordion.Toggle>
@@ -48,7 +48,7 @@ export default function FormTwo() {
                 <input type="radio" id="customRadio2" name="customRadio" className="d-none custom-control-input" />
                 <label className="custom-control-label" htmlFor="customRadio2">
                   My business is not yet registered,  <br />
-                    I would like to register <br />
+                    I would like to register
                 </label>
               </div>
             </Accordion.Toggle>
