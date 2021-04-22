@@ -1,21 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Accordion, Card } from "react-bootstrap"
 
 import check from "../../assets/images/check.png"
 
 export default function FormTwo() {
+  const [toggle, setToggle] = useState(false)
+  const [toggle2, setToggle2] = useState(false)
+
+  const addClass = (val) => {
+    const style = "px-4 py-3 rnd border-0 shadow__form"
+    if (val === "1" && toggle) return style.concat(" rnd__color")
+    if (val === "2" && toggle2) return style.concat(" rnd__color")
+    return style
+  }
   return (
     <div>
       <div className="form__title">Open a new business account</div>
       <div className="form__description mb-2">A short description comes here</div>
       <div>
         <Accordion defaultActiveKey="1">
-          <Card className="px-4 py-3 rnd border-0 shadow__form">
-            <Accordion.Toggle className="bg-white no__bottom" as={Card.Header} eventKey="0">
+          <Card className={addClass("1")}>
+            <Accordion.Toggle className="bg-white no__bottom" onClick={() => setToggle(!toggle)} as={Card.Header} eventKey="0">
               <div className="custom-control custom-radio">
                 <input type="radio" id="customRadio1" name="customRadio" className="d-none custom-control-input" />
                 <label className="custom-control-label" htmlFor="customRadio1">
-                  have a registered business / <b />
+                  I have a registered business / <b />
                     charity with CAC <br />
                 </label>
               </div>
@@ -33,8 +42,8 @@ export default function FormTwo() {
       </div>
       <div className="mt-3">
         <Accordion defaultActiveKey="1">
-          <Card className="px-4 py-3 border-0 rnd shadow__form">
-            <Accordion.Toggle className="bg-white no__bottom" as={Card.Header} eventKey="0">
+          <Card className={addClass("2")}>
+            <Accordion.Toggle className="bg-white no__bottom" onClick={() => setToggle2(!toggle2)} as={Card.Header} eventKey="0">
               <div className="custom-control custom-radio">
                 <input type="radio" id="customRadio2" name="customRadio" className="d-none custom-control-input" />
                 <label className="custom-control-label" htmlFor="customRadio2">

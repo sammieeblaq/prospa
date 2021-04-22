@@ -195,7 +195,7 @@
 }
 
 .rnd__color {
-    border: 0.5px solid #fa4a84;
+    border: 0.5px solid #fa4a84 !important;
 }
 
 .no__bottom {
